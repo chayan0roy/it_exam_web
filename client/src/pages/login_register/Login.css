@@ -1,0 +1,143 @@
+.login {
+    position: relative;
+    width: 380px;
+    height: 85vh;
+    top: 12vh;
+    margin: auto;
+    background: #000000cb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 85vh;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+}
+
+.login::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 85vh;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.login .inputArea {
+    position: absolute;
+    inset: 2px;
+    border-radius: 10px;
+    background: #23242a;
+    z-index: 10;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_image_box {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.input_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input_box {
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.input_box input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.input_box span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 2rem;
+    color: #ffffff;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.input_box input:valid~span,
+.input_box input:focus~span {
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-20px);
+    font-size: 1.5rem;
+}
+
+
+.input_box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+
+.input_box input:valid~i,
+.input_box input:focus~i {
+    height: 40px;
+}
+
+
+.login button {
+    padding: 11px 0;
+    width: 150px;
+    font-size: 2rem;
+    margin: 15px auto 10px;
+}
+
+.link {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
