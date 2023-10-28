@@ -11,7 +11,7 @@ export default function SecondPage() {
 	}, [])
 
 	const getSPData = async () => {
-		let result = await fetch(`http://localhost:5000/getSPData/${params.id}`);
+		let result = await fetch(`https://it-exam-web-back.onrender.com/getSPData/${params.id}`);
 		result = await result.json();
 		setSPdata(result.language);
 	}

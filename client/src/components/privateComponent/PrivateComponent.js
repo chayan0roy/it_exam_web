@@ -39,7 +39,7 @@ export default function PrivateComponent({ isLogin, setIsLogin }) {
         if (token) {
             let fromData = new FromData();
             fromData.append("token", token);
-            const result = await axios.post("http://localhost:5000/getToken", fromData,);
+            const result = await axios.post("https://it-exam-web-back.onrender.com/getToken", fromData,);
             if (result.data.message) {
                 setIsLogin(true);
                 navigate('/');

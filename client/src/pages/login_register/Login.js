@@ -18,7 +18,7 @@ export default function Login({ setIsLogin }) {
 			let fromData = new FromData();
 			fromData.append("email", email);
 			fromData.append("password", password);
-			const result = await axios.post("http://localhost:5000/login", fromData,);
+			const result = await axios.post("https://it-exam-web-back.onrender.com/login", fromData,);
 			Cookies.set('auth_token', result.data.auth_token, { expires: 7 });
 			setIsLogin(true);
 			navigate('/');

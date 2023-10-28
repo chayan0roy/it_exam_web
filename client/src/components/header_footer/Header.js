@@ -21,7 +21,7 @@ export default function Header({ isLogin, setIsLogin }) {
 		const token = Cookies.get("auth_token");
 		let fromData = new FromData();
 		fromData.append("token", token);
-		const result = await axios.post("http://localhost:5000/getUserImage", fromData,);
+		const result = await axios.post("https://it-exam-web-back.onrender.com/getUserImage", fromData,);
 		setUserImg(result.data.userImg);
 	}
 

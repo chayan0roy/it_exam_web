@@ -13,7 +13,7 @@ export default function CodingQuestionPage() {
 	}, [])
 
 	const getCQPData = async () => {
-		let result = await fetch(`http://localhost:5000/getCQPData/${params.languageID}`);
+		let result = await fetch(`https://it-exam-web-back.onrender.com/getCQPData/${params.languageID}`);
 		result = await result.json();
 		setCQPage(result.languageQuestions);
 	}

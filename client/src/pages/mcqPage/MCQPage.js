@@ -26,7 +26,7 @@ export default function MCQPage({ setQuestionLength, setCorrectAnswer, setWrongA
 	}, [])
 
 	const getSPData = async () => {
-		let result = await fetch(`http://localhost:5000/getMCQ/${params.languageID}`);
+		let result = await fetch(`https://it-exam-web-back.onrender.com/getMCQ/${params.languageID}`);
 		result = await result.json();
 		setAllQuestions(result.languageQuestions);
 	}

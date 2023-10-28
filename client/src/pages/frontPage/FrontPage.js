@@ -10,7 +10,7 @@ export default function FrontPage() {
 	}, [])
 
 	const getFPData = async () => {
-		let result = await fetch(`http://localhost:5000/getFPData`);
+		let result = await fetch(`https://it-exam-web-back.onrender.com/getFPData`);
 		result = await result.json();
 		setFPdata(result[0].Data);
 	}
