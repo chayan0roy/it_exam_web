@@ -1,0 +1,47 @@
+.answerPage {
+    position: relative;
+    top: 13vh;
+    height: 87vh;
+    width: 100%;
+}
+
+.answer_area {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.answer_area_top, 
+.answer_area_bottom {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
+    padding: 20px 3%;
+    background-color: #000000a4;
+}
+
+.answer_area_top {
+    margin-bottom: 10px;
+}
+
+.answer_area_bottom {
+    margin-top: 10px;
+}
+
+.answer_area_top h1, 
+.answer_area_bottom h1 {
+    padding: 10px 30px;
+    background-color: #000000;
+}
+
+.answerPage_btn_area {
+    height: 20%;
+}
+
+.answerPage_btn {
+    padding: 10px 20px;
+    font-size: 2.5rem;
+}

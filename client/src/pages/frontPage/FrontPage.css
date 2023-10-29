@@ -1,0 +1,45 @@
+.frontPage_Card {
+    height: 400px;
+    position: relative;
+    top: 12vh;
+    margin: 10px 0;
+    border-top: 1px dashed cyan;
+    border-bottom: 1px dashed cyan;
+    background-color: #000000cd;
+}
+
+.frontPage_Card:nth-child(1) {
+    margin-top: 0;
+}
+.frontPage_Card:nth-child(2) {
+    margin-bottom: 0;
+}
+
+
+.FPleft, 
+.FPright {
+    width: 50%;
+    height: 100%;
+}
+
+.FPleft {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.FPleft h1 {
+    text-align: center;
+    font-size: 6rem;
+    color: #fff;
+}
+
+.FPleft .btn {
+    padding: 13px 20px;
+    font-size: 2.5rem;
+}
+
+.FPright img {
+    max-height: 100%;
+    max-width: 90%;
+    object-fit: cover;
+}
