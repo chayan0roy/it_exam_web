@@ -11,21 +11,13 @@ const MCQPSchima = require("./database/schima/MCQPSchima");
 const CQP_Schima = require("./database/schima/CQPSchima");
 const SOQSchima = require("./database/schima/SOQSchima");
 
-
-
 dotdev.config({ path: './config.env' });
 require("./database/connection");
 const app = express();
 
-
 app.use(fileupload());
 app.use(express.json());
 app.use(cors());
-
-
-
-
-
 
 //REGISTRATION API ================================= REGISTRATION API
 app.post('/register', async (req, res) => {
@@ -212,42 +204,6 @@ app.get('/getProducts', async (req, res) => {
 		res.send({ reslt: "No product found" });
 	}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

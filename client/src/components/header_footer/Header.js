@@ -35,7 +35,7 @@ export default function Header({ isLogin, setIsLogin }) {
 	return (
 		<div className='header flex3'>
 			<div className='headerLogoArea'>
-				Exam
+				IT Exam Web
 			</div>
 			<div className='headerLinkArea'>
 				{
